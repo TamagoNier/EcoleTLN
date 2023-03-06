@@ -36,6 +36,11 @@ namespace Classes.ClassesEcole
             this.Nom = nom;
             this.AnneeArrive = anneeArrive;
         }
+
+        public override string ToString() //A Completer
+        {
+            
+        }
     }
 
 

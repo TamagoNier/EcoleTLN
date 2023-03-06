@@ -50,7 +50,7 @@
     <Compile Include="CLasses.ClassesEcole\SpecialisationEtudiant\EtudiantRegulier.cs" />
     <Compile Include="CLasses.ClassesEcole\SpecialisationPersonnel\Enseignant.cs" />
     <Compile Include="CLasses.ClassesEcole\SpecialisationPersonnel\Secretaire.cs" />
-    <Compile Include="Ecole.cs" />
+    <Compile Include="Ecole\Ecole.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

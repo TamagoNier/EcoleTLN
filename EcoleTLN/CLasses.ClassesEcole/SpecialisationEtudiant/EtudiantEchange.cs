@@ -17,6 +17,13 @@ namespace Classes.ClassesEcole
             this.universiteOrigine = universiteOrigine;
         }
 
+        public override string ToString()
+        {
+            return "Etudiant Echange : \n\tMatricule : " + this.Matricule +"\n\tNom : " + this.Nom
+                + "\n\tAnnée : " + this.AnneeArrive + "\n\t";
+        }
+
+     
         
     }
 }
