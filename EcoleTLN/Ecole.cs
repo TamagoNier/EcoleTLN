@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Classes.ClassesEcole
 
 namespace EcoleTLN
 {
@@ -10,6 +11,6 @@ namespace EcoleTLN
     {
         private string nom;
         private int anneeCreation;
-        private Dictionary<Object, object> contacts; //a changer
+        private Dictionary<Contact.Matricule, Contact> contacts; //a changer
     }
 }

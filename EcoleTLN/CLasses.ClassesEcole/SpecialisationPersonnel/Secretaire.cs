@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Classes.ClassesEcole
 {
-    class Secretaire
+    class Secretaire:Personnel
     {
+        public Secretaire(int matricule, string nom, int anneeArrive, string nomLaboratoire, double salaire)
+            :base(matricule, nom, anneeArrive, nomLaboratoire, salaire)
+        {
+
+        }
     }
 }
