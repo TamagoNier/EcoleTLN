@@ -14,9 +14,18 @@ namespace Classes.ClassesEcole
         public Enseignant(int matricule, string nom, int anneeArrive, string nomLaboratoire, double salaire, string section)
             :base(matricule, nom, anneeArrive, nomLaboratoire, salaire)
         {
+            this.matricule = matricule;
+            this.nom = nom;
+            this.anneeArrive = anneeArrive;
+            this.NomLaboratoire = nomLaboratoire;
+            this.Salaire = salaire;
+
             this.Section = section;
         }
 
-        
+        public override string ToString()
+        {
+            return base.ToString() + "\n\tSection : " + this.section;
+        }
     }
 }

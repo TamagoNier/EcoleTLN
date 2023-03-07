@@ -14,13 +14,17 @@ namespace Classes.ClassesEcole
         public EtudiantEchange(int matricule, string nom, int anneeArrive, string section, string universiteOrigine)
             :base(matricule, nom, anneeArrive, section)
         {
+            this.matricule = matricule;
+            this.nom = nom;
+            this.AnneeArrive = anneeArrive;
+            this.Section = section;
+
             this.universiteOrigine = universiteOrigine;
         }
 
         public override string ToString()
         {
-            return "Etudiant Echange : \n\tMatricule : " + this.Matricule +"\n\tNom : " + this.Nom
-                + "\n\tAnnée : " + this.AnneeArrive + "\n\t";
+            return base.ToString() + "\n\tUniversité d'Origine : " + this.universiteOrigine;
         }
 
      

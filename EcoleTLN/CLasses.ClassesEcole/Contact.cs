@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes.ClassesEcole
 {
-    abstract class Contact
+    class Contact
     {
         protected int matricule;
         protected string nom;
@@ -37,9 +37,10 @@ namespace Classes.ClassesEcole
             this.AnneeArrive = anneeArrive;
         }
 
-        public override string ToString() //A Completer
+        public override string ToString() 
         {
-            
+            return this.GetType().Name + " :" +"\n\tMatricule : " + this.matricule + "\n\tNom : " + 
+                this.nom + "\n\tAnnée : " + this.anneeArrive;
         }
     }
 

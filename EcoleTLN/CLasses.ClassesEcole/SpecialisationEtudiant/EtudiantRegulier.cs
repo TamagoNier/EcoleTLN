@@ -14,9 +14,17 @@ namespace Classes.ClassesEcole
         public EtudiantRegulier(int matricule, string nom, int anneeArrive, string section, double noteMoyenne)
             :base( matricule, nom, anneeArrive, section)
         {
+            this.matricule = matricule;
+            this.nom = nom;
+            this.AnneeArrive = anneeArrive;
+            this.section = section;
+
             this.NoteMoyenne = noteMoyenne;
         }
 
-        
+        public override string ToString()
+        {
+            return base.ToString() + "\n\tMoyenne : " + this.noteMoyenne;
+        }
     }
 }
